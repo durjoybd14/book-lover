@@ -1,0 +1,9 @@
+Table tr td{
+    width:30%;
+    text-align: center;
+}
+
+Table thead tr th {
+    width:34%;
+    text-align: center;
+}

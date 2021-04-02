@@ -1,0 +1,18 @@
+.adminHalfLeft{
+    height:100%;
+}
+
+.adminHalfLeft span, .adminHalfLeft img, .adminHalfLeft h6{
+    color:white;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+@media (max-width: 1199px){
+    .adminHalfLeft h6{
+        font-size: 14px;
+    }
+}
+
+
