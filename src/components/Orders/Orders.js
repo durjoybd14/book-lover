@@ -9,7 +9,7 @@ const Orders = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [orders, setOrders] = useState([]);
     useEffect(() => {
-        fetch('https://aqueous-retreat-04574.herokuapp.com/orders?email=' + loggedInUser.email, {
+        fetch('https://fathomless-shore-28553.herokuapp.com/orders?email=' + loggedInUser.email, {
             method: 'GET',
             headers: {
                 'Content-type': 'application/json'
@@ -26,7 +26,7 @@ const Orders = () => {
     const onSubmit = data => {
         const orderDetails = { ...loggedInUser, orderTime: new Date(), address: data.address, phone: data.phone };
 
-        fetch('https://aqueous-retreat-04574.herokuapp.com/confirmOrder', {
+        fetch('https://fathomless-shore-28553.herokuapp.com/confirmOrder', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

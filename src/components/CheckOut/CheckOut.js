@@ -15,7 +15,7 @@ const CheckOut = () => {
 
     const [selectedBook, setSelectedBook] = useState({});
     useEffect(() => {
-        fetch(`https://aqueous-retreat-04574.herokuapp.com/checkout/${id}`)
+        fetch(`https://fathomless-shore-28553.herokuapp.com/checkout/${id}`)
             .then(res => res.json())
             .then(data => setSelectedBook(data[0]))
     }, [])
@@ -25,7 +25,7 @@ const CheckOut = () => {
     const handleCheckOut = () => {
         const userInformation = { ...loggedInUser, ...selectedDate, ...selectedBook };
 
-        fetch(`https://aqueous-retreat-04574.herokuapp.com/addCheckout`, {
+        fetch(`https://fathomless-shore-28553.herokuapp.com/addCheckout`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(userInformation)

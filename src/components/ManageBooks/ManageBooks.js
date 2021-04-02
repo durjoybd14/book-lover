@@ -7,7 +7,7 @@ import '../BookDetails/BookDetails.css';
 const ManageBooks = () => {
     const [books, setBooks] = useState([]);
     useEffect(() => {
-        fetch(`https://aqueous-retreat-04574.herokuapp.com/books`)
+        fetch(`https://fathomless-shore-28553.herokuapp.com/books`)
             .then(res => res.json())
             .then(data => setBooks(data))
     }, [])
