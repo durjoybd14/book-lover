@@ -4,7 +4,7 @@
 
 
 
-Features of the website:
+# Features of the website:
 
 1.User can login using google
 
@@ -20,7 +20,7 @@ Features of the website:
 
 
 
-Technology use on the website:
+# Technology use on the website:
 
 1.React JS,
 
@@ -28,13 +28,13 @@ Technology use on the website:
 
 3.Firebase,
 
-4.Bootstrap,
+4.Express,
 
 5.React Router
 
 6.React Hook Form
 
-7.Express and more...
+7.Bootstrap and more...
 
 
 
